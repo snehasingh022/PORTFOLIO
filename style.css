@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+margin: 0;
+padding: 0;
+}
+
+.sidebar {
+    background-color: rgb(98, 53, 56);
+    width: 250px;
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  height: 120vh;
+  transition: transform 0.9s ease-out;
+}
+.sidebar nav{
+    padding: 45px;
+}
+.sidebar nav li{
+    
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+    
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: bisque;
+}
+.main {
+    
+    
+    width: 105vw;
+}
+.container {
+     background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-abstract-playful-portfolio-pink-memphis-image_593415.jpg");
+     background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.infocontainer {
+
+height: 60vh;
+width: 80vw;
+margin: 147px auto;
+display: flex;
+justify-content: space-around;
+}
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+}
+.devpic img{
+    height: 60vh;
+    width: 37vw;
+}
+.hello{
+font-size: 60px;
+}
+.name{
+font-size: 52px;
+font-weight: bold;
+}
+.about{
+font-size: 41px;
+}
+.buttons{
+    margin-top:34px;
+}
+.buttons button{
+padding: 13px;
+border-radius: 20px;
+color: beige;
+background-color: rgb(98, 53, 56);
+font-weight: bold;
+font-size: 13px;
+margin: 0 3px;
+padding: 9px 14px;
+cursor: pointer;
+}
+.buttons button:hover{
+    background-color: rgb(235, 237, 246);
+    color: rgb(136, 129, 226);
+}
+.moreabout{
+    font-size: 22px;
+    margin-top: 25px;
+}
+.contactform{
+    padding: 144px;
+font-family: "Source Code Pro", monospace;
+}
+.contactform h1{
+font-family: "Playfair Display", serif;
+  text-align: center;
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+width: 16vw;
+border-radius: 5px;
+margin: 6px 0;
+padding: 3px;
+}
+#emailHelp{
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+#form-check{
+flex-direction: row;
+}
+#form-check input{
+width: 24px;
+margin: 3px 0;
+}
+.contactform button{
+     background-color: rgb(98, 53, 56);
+    color: beige;
+    padding: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.contactform button:hover{
+    background-color: rgb(235, 237, 246);
+    color: rgb(136, 129, 226);
+}
+/*intro//*
+/* Intro Page Styles */
+/* Responsive Design for Tablets and Mobiles */
+/* Default styles for larger screens */
+
+
+/* Responsive Design for Tablets and Mobiles */
+@media (max-width: 1024px) {
+    .devpic img {
+        width: 30vw; /* Adjust image width to 70% of viewport width */
+        height: auto; /* Ensure the aspect ratio is maintained */
+        margin-bottom: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .sidebar nav {
+        padding: 20px;
+    }
+
+    .sidebar nav li {
+        font-size: 24px;
+        padding: 15px 0;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .infocontainer {
+        flex-direction: column;
+        align-items: center;
+        margin: 80px auto;
+        width: 90vw;
+        height: auto;
+        padding: 20px;
+    }
+
+    .devinfo {
+        align-items: center;
+        text-align: center;
+        max-width: 90vw;
+    }
+
+    .hello {
+        font-size: 40px;
+    }
+
+    .name {
+        font-size: 34px;
+    }
+
+    .about {
+        font-size: 26px;
+    }
+
+    .moreabout {
+        font-size: 18px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .buttons button {
+        margin: 6px;
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .contactform {
+        padding: 40px 20px;
+    }
+
+    .contactform form div input {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .hello {
+        font-size: 32px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .about {
+        font-size: 22px;
+    }
+
+    .moreabout {
+        font-size: 16px;
+    }
+
+    .sidebar nav li {
+        font-size: 20px;
+    }
+
+    .buttons button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .devpic img {
+        width: 40vw; /* Adjust image width to 90% of the viewport width */
+        height: auto; /* Ensure it scales properly */
+    }
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.hamburger img{
+    width: 35px;
+}
+.cross{
+ margin-left: 180px;
+}
+.sidebargo{
+    transform: translate(-100%);
+    position: absolute;
+}
+@media (max-width: 1024px) {
+  .cross {
+    margin-left: 10px;  /* aligns horizontally with hamburger */
+    margin-top: 10px;   /* pushes it below */
+  }
+}
